@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: lightcoral;
+}
+
+img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.padding2 {
+    padding-left: 2vw;
+}
+
+.padding3 {
+    padding-right: 2vw;
+}
+
+i {
+    color: red;
+}
+
+#header {
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+    font-size: 3.5vw;
+    padding-top: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#section1 {
+    box-shadow: 10px 10px 5px lightgray;
+}
+
+.padding {
+    padding-bottom: 6vw;
+    padding-top: 6vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#footer {
+    background-color: whitesmoke;
+}
+
+h2 {
+    color: teal;
+    font-size: 2.5vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+}
+
+.column3 {
+    float: left;
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 380px) {
+    #header {
+        padding-top: 70vw;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #section1 {
+        font-size: 3vw;
+    }
+    #footer {
+        font-size: 3vh;
+    }
+    li {
+        float: left;
+    }
+    .padding {
+        padding-bottom: 7vw;
+        padding-top: 7vw;
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+    .padding2 {
+        padding-left: 0vw;
+    }
+    .padding3 {
+        padding-right: 0vw;
+    }
+    h2 {
+        color: teal;
+        font-size: 6vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+    .flex {
+        flex-direction: column;
+        display: flex;
+    }
+    .flex2 {
+        flex-direction: column-reverse;
+    }
+    .column2 {
+        width: 100%;
+    }
+    .column3 {
+        width: 100%;
+    }
+    iframe {
+        height: 100vw;
+    }
+}
